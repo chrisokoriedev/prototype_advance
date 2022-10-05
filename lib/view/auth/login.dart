@@ -175,7 +175,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               colorText: whiteColor,
                             );
                           } else {
-                            print(boxHive.get('password'));
                             Get.snackbar(
                               'Status',
                               "Login Successful",

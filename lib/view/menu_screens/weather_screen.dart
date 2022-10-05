@@ -101,7 +101,7 @@ class _WeatherApiScreenState extends State<WeatherApiScreen> {
                                                 color: whiteColor,
                                                 fontSize: 20.sp),
                                           ),
-                                          Text(','),
+                                          const Text(','),
                                           Text(
                                             weatherApiController
                                                 .data.value.location.country,

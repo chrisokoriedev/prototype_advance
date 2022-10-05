@@ -53,7 +53,7 @@ class _TranferFundScreenState extends State<TranferFundScreen> {
                 SizedBox(
                   height: 120.h,
                 ),
-                Text('Enter Account Number'),
+                const Text('Enter Account Number'),
                 SizedBox(
                   height: 10.h,
                 ),
@@ -66,12 +66,12 @@ class _TranferFundScreenState extends State<TranferFundScreen> {
                     return null;
                   },
                   decoration:
-                      InputDecoration(prefixIcon: Icon(Icons.account_balance)),
+                      const InputDecoration(prefixIcon:  Icon(Icons.account_balance)),
                 ),
                 SizedBox(
                   height: 30.h,
                 ),
-                Text('Enter Amount to tranfer'),
+                const Text('Enter Amount to tranfer'),
                 SizedBox(
                   height: 10.h,
                 ),
@@ -84,13 +84,13 @@ class _TranferFundScreenState extends State<TranferFundScreen> {
                       }
                       return null;
                     },
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       prefixIcon: Icon(Icons.money),
                     )),
                 SizedBox(
                   height: 30.h,
                 ),
-                Text('Enter Pin'),
+                const Text('Enter Pin'),
                 SizedBox(
                   height: 20.h,
                 ),
@@ -102,7 +102,7 @@ class _TranferFundScreenState extends State<TranferFundScreen> {
                     }
                     return null;
                   },
-                  decoration: InputDecoration(prefixIcon: Icon(Icons.pin)),
+                  decoration: const InputDecoration(prefixIcon: Icon(Icons.pin)),
                 ),
                 SizedBox(
                   height: 40.h,

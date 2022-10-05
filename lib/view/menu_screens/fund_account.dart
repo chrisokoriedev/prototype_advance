@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:prototype_advance/style/style.dart';
@@ -69,7 +68,7 @@ class _FundAccountState extends State<FundAccount> {
                     }
                     return null;
                   },
-                  decoration: InputDecoration(prefix: Text('₦')),
+                  decoration: const InputDecoration(prefix: Text('₦')),
                 ),
                 SizedBox(
                   height: 30.h,

@@ -16,7 +16,6 @@ class WeatherApi {
     if (apiRequest.statusCode == 200) {
       final data = apiRequest.data;
       final WeatherApiModel weatherApiModel = WeatherApiModel.fromJson(data);
-      print(weatherApiModel);
       return weatherApiModel;
     } else {
       return null;

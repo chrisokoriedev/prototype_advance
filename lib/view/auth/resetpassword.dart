@@ -11,8 +11,7 @@ import 'package:prototype_advance/view/auth/login.dart';
 
 import '../../main.dart';
 import '../../style/style.dart';
-import '../dashboard.dart';
-import 'signup.dart';
+
 
 class ResetPassword extends StatefulWidget {
   const ResetPassword({Key? key}) : super(key: key);
