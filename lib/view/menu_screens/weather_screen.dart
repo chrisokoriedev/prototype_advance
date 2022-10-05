@@ -20,6 +20,7 @@ class _WeatherApiScreenState extends State<WeatherApiScreen> {
     super.initState();
     weatherApiController.onInit();
   }
+  //how to use image in flutter?
 
   @override
   Widget build(BuildContext context) {
@@ -28,14 +29,19 @@ class _WeatherApiScreenState extends State<WeatherApiScreen> {
         child: Obx(
           () => weatherApiController.isLoading.isTrue
               ? Container(
-                  padding: EdgeInsets.only(top: 300.sp),
-                  child: Center(child: Image.asset('loading.gif')))
+                  padding: EdgeInsets.only(top: 350.sp),
+                  child: Center(
+                      child: Image.asset(
+                    'assets/loading.gif',
+                    width: 150.w,
+                  )))
               : Container(
                   padding: kDefaultPaddingII,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(
-                        height: 30.h,
+                        height: 10.h,
                       ),
                       InkWell(
                         onTap: () => Get.back(),
@@ -45,7 +51,7 @@ class _WeatherApiScreenState extends State<WeatherApiScreen> {
                         ),
                       ),
                       SizedBox(
-                        height: 30.h,
+                        height: 10.h,
                       ),
                       Container(
                         width: double.infinity,
