@@ -109,7 +109,7 @@ class _TranferFundScreenState extends State<TranferFundScreen> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    var amount = boxHive.get('amount');
+                    int amount = boxHive.get('amount');
                     int fundInput = int.parse(fundMoney.text);
                     if (_formKey.currentState!.validate()) {
                       setState(() {});
@@ -121,8 +121,7 @@ class _TranferFundScreenState extends State<TranferFundScreen> {
                           colorText: whiteColor,
                         );
                       }
-                      if (fundInput > amount) {
-                        print('not');
+                     else if (fundInput > amount) {
                         Get.snackbar(
                           'Status',
                           "Insufficient funds,\n pls fund the account..",
