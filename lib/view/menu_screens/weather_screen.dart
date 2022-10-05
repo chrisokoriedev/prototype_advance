@@ -27,11 +27,23 @@ class _WeatherApiScreenState extends State<WeatherApiScreen> {
       body: SingleChildScrollView(
         child: Obx(
           () => weatherApiController.isLoading.isTrue
-              ? const Center(child: CircularProgressIndicator())
+              ? Container(
+                  padding: EdgeInsets.only(top: 300.sp),
+                  child: Center(child: Image.asset('loading.gif')))
               : Container(
                   padding: kDefaultPaddingII,
                   child: Column(
                     children: [
+                      SizedBox(
+                        height: 30.h,
+                      ),
+                      InkWell(
+                        onTap: () => Get.back(),
+                        child: Icon(
+                          Icons.arrow_back,
+                          size: 25.sp,
+                        ),
+                      ),
                       SizedBox(
                         height: 30.h,
                       ),

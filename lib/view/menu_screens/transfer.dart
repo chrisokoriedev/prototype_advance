@@ -30,7 +30,26 @@ class _TranferFundScreenState extends State<TranferFundScreen> {
                 SizedBox(
                   height: 50.h,
                 ),
-                Text('Transfer Funds'),
+                Row(
+                  children: [
+                    InkWell(
+                      onTap: () => Get.back(),
+                      child: Icon(
+                        Icons.arrow_back,
+                        size: 25.sp,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20.w,
+                    ),
+                    Text(
+                      'Transfer Funds',
+                      style: TextStyle(
+                        fontSize: 25.sp,
+                      ),
+                    ),
+                  ],
+                ),
                 SizedBox(
                   height: 120.h,
                 ),

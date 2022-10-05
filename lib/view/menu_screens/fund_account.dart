@@ -34,7 +34,26 @@ class _FundAccountState extends State<FundAccount> {
                 SizedBox(
                   height: 50.h,
                 ),
-                Text('Fund Account'),
+                Row(
+                  children: [
+                    InkWell(
+                      onTap: () => Get.back(),
+                      child: Icon(
+                        Icons.arrow_back,
+                        size: 25.sp,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20.w,
+                    ),
+                    Text(
+                      'Fund Account',
+                      style: TextStyle(
+                        fontSize: 25.sp,
+                      ),
+                    ),
+                  ],
+                ),
                 SizedBox(
                   height: 200.h,
                 ),
@@ -61,7 +80,7 @@ class _FundAccountState extends State<FundAccount> {
                     if (_formKey.currentState!.validate()) {
                       setState(() {});
                       if (amount != null) {
-                        var newFund =amount+ int.parse(fundMoney.text);
+                        var newFund = amount + int.parse(fundMoney.text);
                         boxHive.put('amount', newFund);
                         Get.snackbar(
                           'Status',
