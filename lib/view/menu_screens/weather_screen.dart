@@ -194,6 +194,12 @@ class _WeatherApiScreenState extends State<WeatherApiScreen> {
                                       color: Colors.amber,
                                       size: 40.sp,
                                     )
+                                  else if (data.text == 'Mostly Cloudy')
+                                    Icon(
+                                      Icons.cloud_circle_sharp,
+                                      color: Colors.grey,
+                                      size: 40.sp,
+                                    )
                                   else
                                     Container(),
                                   Text(data.code.toString())

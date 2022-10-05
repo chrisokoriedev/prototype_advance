@@ -3,8 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:prototype_advance/main.dart';
 import 'package:prototype_advance/style/style.dart';
+import 'package:prototype_advance/view/menu_screens/alarm.dart';
 import 'package:prototype_advance/view/menu_screens/fund_account.dart';
-import 'package:prototype_advance/view/menu_screens/weatherapi.dart';
+import 'package:prototype_advance/view/menu_screens/weather_screen.dart';
 
 import 'menu_screens/transfer.dart';
 
@@ -92,7 +93,8 @@ class _DashBoardState extends State<DashBoard> {
                     () => Get.to(const TranferFundScreen())),
                 menuCompo(sizeMediaquery, 'Weather Forcast',
                     () => Get.to(const WeatherApiScreen())),
-                menuCompo(sizeMediaquery, 'Daily Alarm', () {}),
+                menuCompo(sizeMediaquery, 'Daily Alarm',
+                    () => Get.to(const AlarmScreen())),
               ])
             ],
           ),

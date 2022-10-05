@@ -22,6 +22,11 @@ dependencies:
   proste_bezier_curve:
   hive:
   path_provider:
+  location: 
+  intl:
+  pull_to_refresh: 
+  geolocator:
+  sunrise_sunset:
 
 dev_dependencies:
   flutter_test:
